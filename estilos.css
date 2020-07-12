@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "GameBoy";
+    src: url("./Fonts/Early\ GameBoy.ttf");
+}
+
+body{
+    font-family: "GameBoy";
+}
+
+.nav-bg{
+    background-color: #ef5350;
+    font-family: "GameBoy";
+}
+
+.logo-size{
+    width: 116.4px;
+    height: 56.4px;
+}
+
+
+#search-button-outline{
+    outline: black !important;
+}
+
+.no-border{
+    border: none;
+}
+
+.type-font{
+    font-size: 14px;
+}
+
+/* PIXEL BORDER */
+.pxl-border {
+    background: white;
+    box-shadow:
+      /* Inner Background Color -- Same as inner */
+        0   -6px 0  -2px white,
+        0    6px 0  -2px white,
+        0  -12px 0  -4px white,
+        0   12px 0  -4px white,
+        0  -18px 0  -8px white,
+        0   18px 0  -8px white,
+        0  -24px 0 -12px white,
+        0   24px 0 -12px white,
+
+      /* Inner Border */
+        -2px  0   0   0   black,
+        2px  0   0   0   black,
+        0   -4px 0   0   black,
+        0    4px 0   0   black,
+        0  -10px 0  -2px black,
+        0   10px 0  -2px black,
+        0  -14px 0  -4px black,
+        0   14px 0  -4px black,
+        0  -20px 0  -8px black,
+        0   20px 0  -8px black,
+        0  -26px 0 -12px black,
+        0   26px 0 -12px black,
+
+      /* Middle Border -- Accent */
+        -4px  0   0   0   white,
+        4px  0   0   0   white,
+        0   -2px 0   2px white,
+        0    2px 0   2px white,
+        0   -8px 0   0px white,
+        0    8px 0   0px white,
+        0  -12px 0  -2px white,
+        0   12px 0  -2px white,
+        0  -16px 0  -4px white,
+        0   16px 0  -4px white,
+        0  -22px 0  -8px white,
+        0   22px 0  -8px white,
+        0  -28px 0 -12px white,
+        0   28px 0 -12px white,
+
+      /* Outer Border */
+        -6px  0   0   0   black,
+        6px  0   0   0   black,
+        0    0   0   4px black,
+        0   -6px 0   2px black,
+        0    6px 0   2px black,
+        0  -10px 0   0   black,
+        0   10px 0   0   black,
+        0  -14px 0  -2px black,
+        0   14px 0  -2px black,
+        0  -18px 0  -4px black,
+        0   18px 0  -4px black,
+        0  -24px 0  -8px black,
+        0   24px 0  -8px black,
+        0  -30px 0 -12px black,
+        0   30px 0 -12px black;
+}
+
+.video{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#music{
+    background-color: #ef5350;
+    margin-right: 15px;
+}
