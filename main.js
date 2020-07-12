@@ -7,6 +7,8 @@
     var row = document.querySelector('.row');
     const searchBar = document.getElementById('searchBar');
 
+    
+
     searchBar.addEventListener('keyup', (e) => {
         row.innerHTML=''
         const searchString = e.target.value.toLowerCase();
@@ -66,9 +68,6 @@
     }
     
     displayPokemons(pokemon);
-    $('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
-    });
 })()
 
 
