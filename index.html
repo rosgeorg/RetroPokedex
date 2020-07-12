@@ -22,7 +22,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                    <!--   <li class="nav-item active">
+                        <!--   <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li> -->
                     </ul>
@@ -36,7 +36,7 @@
         </nav>
     </header>
 
-    <section style='margin-top: 65px;'>
+    <section style='padding-top: 65px; padding-bottom: 30px;'>
         <div class='container'>
             <div class='row'>
 
@@ -48,17 +48,7 @@
     <!--<iframe class='video' width="168" height="94.5" src="https://www.youtube.com/embed/cAXLDCI5voM?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 </body>
 
-<script>
-   $(document).ready(function () {
-    $(document).click(function (event) {
-        var clickover = $(event.target);
-        var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
-        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-            $("button.navbar-toggle").click();
-        }
-    });
-});
-</script>
+
 
 <script src='pokedex.js'></script>
 <script src='main.js'></script>
@@ -72,5 +62,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+<script>
+    $(document).click(function (event) {
+        $(event.target).closest(".navbar").length || $(".navbar-collapse.show").length && $(".navbar-collapse.show").collapse("hide")
+    });
+</script>
 
 </html>
