@@ -99,8 +99,7 @@ body{
 }
 
 #music{
-    background-color: #ef5350;
-    margin-right: 15px;
+    outline: none;
 }
 
 @media (max-width: 452px){
