@@ -102,3 +102,9 @@ body{
     background-color: #ef5350;
     margin-right: 15px;
 }
+
+@media (max-width: 452px){
+    .card{
+        height: 580px;
+    }
+}
